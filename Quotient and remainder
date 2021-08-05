@@ -1,0 +1,25 @@
+  package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+  //Problem  - Find quotient and remainder
+      //First Method -- We put dividend and divisor in code.. and give ouput in integer        int divisor = 4, dividend = 25;
+        int quotient = dividend / divisor;
+        int remainder = dividend % divisor;
+        System.out.println("The quotient is " +quotient);
+        System.out.println("The remainder is" +remainder);
+
+        //Second Method -- When take dividend and divisor as input from user
+        Scanner sc1 = new Scanner(System.in);
+        System.out.println("Enter Value of Dividend");
+        double dividend = sc1.nextInt();
+        System.out.println("Enter value of Divisor");
+        double divisor = sc1.nextInt();
+        double quotient = dividend / divisor;
+        double remainder = dividend % divisor;
+        System.out.println("Quotient is :" + quotient);
+        System.out.println("Remainder is :" + remainder);
+        }
+    }
